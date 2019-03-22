@@ -8,7 +8,9 @@
 
 <body>
 	<div id='container'></div>
-	<h2>Enter Resistor/LED/Capacitor Quantity<h2>
+	<h2>Enter<h2>
+	<h1>QUANTITY<h1>
+		<h3>resistors -  capacitors  - leds<h3> 
 	<input id="quantitySelector" type="text" name="quantity" min="1" max="1000" onkeyup="update()" >
 	<p id="priceField"><p>
 
@@ -32,7 +34,17 @@
 			else if(quantity<1000) 	cost=quantity * 0.01496;
 			else 					cost = quantity * 0.01101;
 
-			_priceField.textContent = Math.floor(cost*100)/100;
+			cost = Math.floor(cost*100)/100;
+			
+			// map 0.4 --> 0.40 etc.
+			if (Math.floor(cost) !== cost)
+        				if((cost.toString().split(".")[1].length || 0) == 1)
+        					_priceField.textContent = "$"+cost+"0"
+        				else
+        					_priceField.textContent = "$"+cost;
+        	else
+        		_priceField.textContent = "$"+cost;
+
 		}
 		
 
