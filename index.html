@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+	<div id='container'></div>
+	<h2>Enter Resistor/LED/Capacitor Quantity<h2>
+	<input id="quantitySelector" type="text" name="quantity" min="1" max="1000" onkeyup="update()" >
+	<p id="priceField"><p>
+
+	<script>
+
+		var container = document.getElementById('container');
+		var _priceField = document.getElementById("priceField");
+
+		function update(){
+			// gets quantity of components 
+			var quantity = document.getElementById("quantitySelector").value;
+			var cost = 0;
+			
+			// set cost structure
+			if(quantity < 10) 		cost = 0.15 * quantity;
+			else if(quantity>9 && quantity<25) 	cost = 0.06 * quantity;
+			else if(quantity < 50) 	cost = 0.04360 * quantity;			
+			else if(quantity<100) 	cost = 0.03320 * quantity;			
+			else if(quantity<250) 	cost = quantity * 0.02450;		
+			else if(quantity<500) 	cost = quantity * 0.01868;
+			else if(quantity<1000) 	cost=quantity * 0.01496;
+			else 					cost = quantity * 0.01101;
+
+			_priceField.textContent = Math.floor(cost*100)/100;
+		}
+		
+
+	</script>
+
+</body>
+</html>
