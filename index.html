@@ -14,18 +14,26 @@
   </head>
   <body>
 
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="ieee.png" width="30" height="30">
+        Mac IEEE 
+      </a>
+    </nav>
+
     <div class="jumbotron">
       <div class="container">
-        <h1>Enter. Quantity.</h1>
+        <img id="mario" src="mario.png">
+        <h1>Enter Quantity:</h1>
         <p>
-          This calculator is good for Resistors, Caps & LEDs as they have the same cost.
+          This calculator is good for Resistors, Caps & LEDs
         </p>
         <br/>
         <p>
           <input id="quantitySelector" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" onkeyup="update()">
           <h2 id="priceField">$0</h2>
         </p>
-        <img id="mario" src="mario.png">
       </div>
     </div>
 
