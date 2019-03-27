@@ -3,26 +3,37 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
 }
-.jumbotron {
-	background: #171721;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	padding: 20px;
-}
+
 h1 { 
 	color: #7C12CD;
 	font-weight: bold;
 	font-size: 400%;
 }
 
-h2{
+h2 {
 	font-weight: bold;
 	color: white;
 }
 
-p{
+p {
 	color: white;
 	font-weight: bold; 
 	font-size: 170%;
+}
+
+.table-title{
+	font-size: 250%;
+}
+.jumbotron {
+	background: #171721;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	padding: 20px;
+}
+
+.navbar-brand {
+	font-size: 1.5em;
+	padding: 0px;
+	margin: 0px;
 }
 
 #mario {
@@ -37,10 +48,4 @@ p{
 	color: white;
 	font-size: 400%;
 	text-align: center;
-}
-
-.navbar-brand {
-	font-size: 1.5em;
-	padding: 0px;
-	margin: 0px;
 }
