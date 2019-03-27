@@ -1,5 +1,5 @@
 body {
-	background:  #3D145C;
+	background:  #7C12CD;
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
 }
@@ -37,8 +37,8 @@ p {
 }
 
 #mario {
-	height: 40%;
-	width: 40%;
+	height: 25%;
+	width: 25%;
 	margin-top: 0px;
 	margin-bottom: 30px;
 }
@@ -46,6 +46,6 @@ p {
 #priceField {
 	margin-top: 50px;
 	color: white;
-	font-size: 400%;
+	font-size: 350%;
 	text-align: center;
 }
