@@ -1,3 +1,17 @@
+
+table, .table-title {
+	margin-left: 10%;
+	align-self: center;
+}
+
+table {
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	max-width: 80%;
+}
+
+th {
+	width: 30%;
+}
 body {
 	background:   #003d66;
 	font-family: 'Consolas', sans-serif;
@@ -21,6 +35,7 @@ p {
 }
 
 .table-title{
+	margin-top: 3%;
 	font-size: 150%;
 	color: #006bb3;
 }
