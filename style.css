@@ -10,7 +10,7 @@ table {
 }
 
 th {
-	width: 30%;
+	width: 40%; /*width of columns in component tables*/
 }
 body {
 	background:   #003d66;
