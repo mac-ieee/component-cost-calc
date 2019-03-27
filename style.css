@@ -15,13 +15,14 @@ h2 {
 }
 
 p {
-	color: #66ccff;
+	color: grey;
 	font-weight: bold; 
 	font-size: 170%;
 }
 
 .table-title{
 	font-size: 150%;
+	color: grey;
 }
 .jumbotron {
 	background: #171721;
