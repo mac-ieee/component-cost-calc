@@ -10,7 +10,7 @@ table {
 }
 
 th {
-	width: 50%; /*width of columns in component tables*/
+	width: 30%;
 }
 body {
 	background:   #003d66;
@@ -35,9 +35,10 @@ p {
 }
 
 .table-title{
+	font-weight: bold;
 	margin-top: 3%;
 	font-size: 150%;
-	color: #006bb3;
+	color: grey;
 }
 .jumbotron {
 	background: #171721;
